@@ -4,6 +4,8 @@ namespace App\Application;
 use Ratchet\ConnectionInterface;
 use Ratchet\Wamp\WampServerInterface;
 use App\Application\Protocol\CommandParser;
+
+
 /**
  * Description of Pusher
  *
@@ -16,8 +18,6 @@ class Pusher implements \Ratchet\MessageComponentInterface {
      * @var CommandParser
      */
     private $protocol; 
-    
-    private $connectionRegistry;
     
     public function onClose(CommandParser $protocol)
     {

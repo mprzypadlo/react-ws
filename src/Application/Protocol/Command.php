@@ -9,5 +9,7 @@ namespace App\Application\Protocol;
 interface Command {
     
    public function name() : string;
+   
+   public static function fromData(\stdClass $data);
     
 }
